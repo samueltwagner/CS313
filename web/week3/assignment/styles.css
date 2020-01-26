@@ -1,0 +1,62 @@
+#icon1 {
+    float: left;
+    padding-left: 10px;
+    color: white;
+}
+
+#icon2 {
+    float: right;
+    color: white;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+header h1 {
+    margin-left: 120px;
+    padding-top: 15px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+}
+
+header {
+    background-color: #FD0000;
+    height: 90px;
+}
+
+#catalog {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#catalog div{
+    margin: auto;
+    padding: 50px;
+}
+
+#cartButton {
+    height: 40px;
+    margin: auto;
+}
+
+.title {
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+#cartPage {
+    padding-left: 50px;
+}
+
+form label {
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+#space {
+    padding: 10px;
+}
