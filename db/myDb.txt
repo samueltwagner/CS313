@@ -1,0 +1,128 @@
+
+// DELETE
+DROP TABLE p90x_user;
+DROP TABLE p90x_workout_title;
+DROP TABLE p90x_workout_details;
+DROP TABLE p90x_workout_time;
+
+// CREATE
+CREATE TABLE p90x_user
+( user_id    SERIAL       NOT NULL PRIMARY KEY
+, first_name VARCHAR(50)  NOT NULL
+, last_name  VARCHAR(50)  NOT NULL
+, user_name  VARCHAR(50)  NOT NULL
+, password   VARCHAR(100) NOT NULL
+, pounds     FLOAT        NULL
+);
+
+CREATE TABLE p90x_workout_title
+( workout_title VARCHAR(100) NOT NULL PRIMARY KEY
+);
+
+CREATE TABLE p90x_workout_time
+( workout_date DATE   NOT NULL PRIMARY KEY
+, day          VARCHAR(50)  NOT NULL
+, month        VARCHAR(50)  NOT NULL
+);
+
+CREATE TABLE p90x_workout_details
+( workout_id    SERIAL NOT NULL PRIMARY KEY
+, workout_date  DATE   NOT NULL REFERENCES p90x_workout_time(workout_date)
+, workout_title VARCHAR(100) NOT NULL REFERENCES p90x_workout_title(workout_title)
+, exercise      VARCHAR(100) NOT NULL 
+, reps          FLOAT  NULL
+, weight        FLOAT  NULL
+);
+
+// INSERT
+-- ----------------------------------------------- --
+-- --------- POPULATE THE USER TABLE --------- --
+-- ----------------------------------------------- --
+INSERT INTO p90x_user   ( first_name
+                        , last_name
+                        , user_name
+                        , password 
+                        , pounds ) 
+                 VALUES ( 'Sam'
+                        , 'Wagner'
+                        , 'swagner'
+                        , 'password'
+                        , 213.6 );
+INSERT INTO p90x_user   ( first_name
+                        , last_name
+                        , user_name
+                        , password 
+                        , pounds ) 
+                 VALUES ( 'Erick'
+                        , 'Adams'
+                        , 'eadams'
+                        , 'password'
+                        , 271.2 );
+
+-- ----------------------------------------------- --
+-- -------- POPULATE THE TITLE TABLE -------- --
+-- ----------------------------------------------- -- 
+INSERT INTO p90x_workout_title ( workout_title
+                                   ) 
+                   VALUES ( 'Chest and Back'
+                                   );  
+INSERT INTO p90x_workout_title ( workout_title
+                                   ) 
+                   VALUES ( 'Plyometrics'
+                                   );  
+INSERT INTO p90x_workout_title ( workout_title
+                                   ) 
+                   VALUES ( 'Sholders and Back'
+                                   );  
+INSERT INTO p90x_workout_title ( workout_title
+                                   ) 
+                   VALUES ( 'Yoga X'
+                                   );  
+INSERT INTO p90x_workout_title ( workout_title
+                                   ) 
+                   VALUES ( 'Legs and Back'
+                                   );  
+INSERT INTO p90x_workout_title ( workout_title
+                                   ) 
+                   VALUES ( 'Kenpo X'
+                                   ); 
+INSERT INTO p90x_workout_title ( workout_title
+                                   ) 
+                   VALUES ( 'Rest'
+                                   ); 
+
+-- ----------------------------------------------- --
+-- -------- POPULATE THE WORKOUT DETAILS TABLE -------- --
+-- ----------------------------------------------- --  
+INSERT INTO p90x_workout_details ( exercise
+                         , reps
+                         , weight ) 
+                  VALUES ( "Push-ups"
+                         , 20
+                         , 0);  
+INSERT INTO p90x_workout_details ( exercise
+                         , reps
+                         , weight ) 
+                  VALUES ( "Pull-ups"
+                         , 10
+                         , 0);  
+
+-- ----------------------------------------------- --
+-- ----- POPULATE THE WORKOUT TIME TABLE ----- --
+-- ----------------------------------------------- --    
+INSERT INTO p90x_workout_time ( day
+                                , month ) 
+                         VALUES ( "Monday"
+                                , "January");    
+INSERT INTO p90x_workout_time ( day
+                                , month ) 
+                         VALUES ( "Tuesday"
+                                , "January");   
+INSERT INTO p90x_workout_time ( day
+                                , month ) 
+                         VALUES ( "Wednesday"
+                                , "January");   
+
+
+
+
