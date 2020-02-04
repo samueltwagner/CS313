@@ -1,3 +1,4 @@
+<h1>hello 2</h1>
 <?php
    require "dbConnect.php";
    $db = get_db();
@@ -18,4 +19,3 @@
    }
 ?>
 
-<h1>hello 2</h1>
