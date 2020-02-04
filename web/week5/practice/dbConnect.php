@@ -26,3 +26,4 @@ function get_db(){
     }
 }
 ?>
+<h1>hello</h1>
