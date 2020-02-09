@@ -28,8 +28,9 @@ function get_db(){
   echo "<h1>Database is Connected!</h1>";
   echo "<h1>this php statement is working!</h1>";
   echo "<h1>Where the magic happens</h1>";
-  echo "this is SQL Statment $workoutDetails";
-  $workoutDetails = $db->prepare("SELECT * FROM p90x_workout_details");
+  echo "this is the SQL Statment $workoutDetails";
+
+  $workoutDetails = $db->prepare("SELECT workout_title FROM p90x_workout_details");
   echo "this is SQL Statment $workoutDetails";
   $workoutDetails->execute();
   while ($wRow = $workoutDetails->fetch(PDO::FETCH_ASSOC))
