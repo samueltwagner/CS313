@@ -1,5 +1,5 @@
 <!-- Top of index.php-->
-<h2>Top of Index.php<h2>
+<h3>Top of Index.php<h3>
 <?php
    require "dbConnect.php";
    $db = get_db();
@@ -15,14 +15,14 @@
    $wRow = $exercises->fetch(PDO::FETCH_ASSOC);
    $exercise_title = $wRow["exercise_title"];
 
-   echo "<h2>Your workout today is $workout_title.</h2>";
-   echo "<h2>Exercise is $exercise_title ($exercise_id)</h2>";
-   echo "<h2>Inside the first php statement.</h2>";
+   echo "<h3>Your workout today is $workout_title.</h3>";
+   echo "<h3>Exercise is $exercise_title ($exercise_id)</h3>";
+   echo "<h3>Inside the first php statement.</h3>";
 ?>
 <br>
-<h2>Below the first php statement</h2>
+<h3>Below the first php statement</h3>
 <br>
-<h2>Above the second php statment</h2>
+<h3>Above the second php statment</h3>
 <?php
       $statement = $db->prepare("SELECT * FROM p90x_workout_title");
       $statement->execute();
@@ -30,8 +30,8 @@
       while ($row = $statement->fetch(PDO::FETCH_ASSOC))
       {
          $workout_title2 = $row['workout_title'];
-         echo "<p>This is the workout title $workout_title2<p>";
-         echo "<h1>Inside the second php statement.</h1>";
+         echo "<h3>This is the workout title $workout_title2<h3>";
+         echo "<h3>Inside the second php statement.</h3>";
       }
 ?>
-<h2>Below the second php statment</h2>
+<h3>Below the second php statment</h3>
