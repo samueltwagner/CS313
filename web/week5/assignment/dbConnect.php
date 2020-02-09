@@ -25,5 +25,5 @@ function get_db(){
       die();
     }
 }
+  echo "<h1>Database is Connected!</h1>"
 ?>
-<h1>Database is Connected!</h1>
