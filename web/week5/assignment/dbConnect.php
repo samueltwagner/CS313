@@ -27,6 +27,7 @@
   }
   echo "<h1>dbConnect.php echo statement</h1>";
   echo "<h1>Will this php variable show up:" .  $dbPort . "</h1>";
+  echo "<h3>My goal was to display workouts and the exercises within the workouts from the database.</h3>";
 
   $workoutDetails = $db->prepare("SELECT workout_title FROM p90x_workout_details");
   $workoutDetails->execute();
