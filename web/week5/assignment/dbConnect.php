@@ -1,34 +1,32 @@
 <!-- Top of dbConnect.php-->
+<h1>Top of dbConnect.php<h1>
 <?php
-
-function get_db(){
-    $db = NULL;
-    try
-    {
-      $dbUrl = getenv('DATABASE_URL');
-    
-      $dbOpts = parse_url($dbUrl);
-    
-      $dbHost = $dbOpts["host"];
-      $dbPort = $dbOpts["port"];
-      $dbUser = $dbOpts["user"];
-      $dbPassword = $dbOpts["pass"];
-      $dbName = ltrim($dbOpts["path"],'/');
-    
-      $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-    
-      $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    }
-    catch (PDOException $ex)
-    {
-      echo 'Error!: ' . $ex->getMessage();
-      die();
-    }
-}
-  echo "<h1>Database is Connected!</h1>";
-  echo "<h1>this php statement is working!</h1>";
-  echo "<h1>Where the magic happens</h1>";
-  echo "<h1>this is the SQL Statment $workoutDetails";
+  function get_db(){
+      $db = NULL;
+      try
+      {
+        $dbUrl = getenv('DATABASE_URL');
+      
+        $dbOpts = parse_url($dbUrl);
+      
+        $dbHost = $dbOpts["host"];
+        $dbPort = $dbOpts["port"];
+        $dbUser = $dbOpts["user"];
+        $dbPassword = $dbOpts["pass"];
+        $dbName = ltrim($dbOpts["path"],'/');
+      
+        $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+      
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+      }
+      catch (PDOException $ex)
+      {
+        echo 'Error!: ' . $ex->getMessage();
+        die();
+      }
+  }
+  echo "<h1>dbConnect.php echo statement</h1>";
+  echo "<h1>Will this php variable show up: $dbPort </h1>";
 
   $workoutDetails = $db->prepare("SELECT workout_title FROM p90x_workout_details");
   $workoutDetails->execute();
@@ -46,6 +44,6 @@ function get_db(){
      echo "<h1>Your workout today is $workout_title.</h1>";
      echo "<h2>Exercise is $exercise_title ($exercise_id)</h2>";
   }
-  
-
 ?>
+
+<h1>Bottom of dbConnect.php<h1>
