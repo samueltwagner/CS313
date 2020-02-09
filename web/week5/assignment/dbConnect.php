@@ -30,7 +30,7 @@ function get_db(){
   echo "<h1>Where the magic happens</h1>";
 
   $workoutDetails = $db->prepare("SELECT * FROM p90x_workout_details");
-  echo $workoutDetails;
+  echo "this is SQL Statment $workoutDetails";
   $workoutDetails->execute();
   while ($wRow = $workoutDetails->fetch(PDO::FETCH_ASSOC))
   {
