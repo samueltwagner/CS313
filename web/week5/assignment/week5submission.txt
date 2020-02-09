@@ -1,0 +1,39 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application:
+
+http://peaceful-chamber-08126.herokuapp.com/week5/assignment/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+
+https://github.com/samueltwagner/CS313/tree/master/web/week5/assignment
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+
+I can only echo statements outside, before trying to access the database in the php code.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+
+The application is not functioning. I cannot display information from the database.
+The select statements work in the database console. They do not echo on the page though.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+
+I loved the activity figuring out SELECT statements for the data set. I really enjoy seeing the database relationship between the workouts and exercises in my database tables.
+
+6. Why should you create a separate user account for your application to access the database?
+
+It's more secure to create a seperate account to access the database.
+
+7. Please select the category you feel best describes your assignment:
+1 - Some attempt was made
+2 - Developing, but significantly deficient
+3 - Slightly deficient, but still mostly adequate
+4 - Meets requirements
+5 - Shows creativity and excels above and beyond requirements
+
+2
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+
+I think the database is working, but I could not get the data to display after several hours of trying.
