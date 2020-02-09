@@ -31,13 +31,13 @@ function get_db(){
   echo "this is the SQL Statment $workoutDetails";
 
   $workoutDetails = $db->prepare("SELECT workout_title FROM p90x_workout_details");
-  echo "this is SQL Statment $workoutDetails";
   $workoutDetails->execute();
   while ($wRow = $workoutDetails->fetch(PDO::FETCH_ASSOC))
   {
+    print_r($workoutDetails);
      $workout_title = $wRow["workout_title"];
      $exercise_id = $wRow["exercise_id"];
-     $exercises = $db->prepare("SELECT exercise_title FROM p90x_exercises WHERE id = $exercise_id");
+     $exercises = $db->prepare("SELECT * FROM p90x_exercises WHERE id = $exercise_id");
      $exercises->execute();
      while ($wRow = $exercises->fetch(PDO::FETCH_ASSOC))
      {
