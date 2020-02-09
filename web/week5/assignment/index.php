@@ -1,3 +1,4 @@
+<h1>Where the magic happens</h1>
 <?php
    require "dbConnect.php";
    $db = get_db();
@@ -17,5 +18,4 @@
       echo "<h2>Exercise is $exercise_title ($exercise_id)</h2>";
    }
 ?>
-<h1>Where the magic happens</h1>
 
