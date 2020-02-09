@@ -43,5 +43,4 @@ function get_db(){
 
   echo "<h1>Your workout today is $workout_title.</h1>";
   echo "<h2>Exercise is $exercise_title ($exercise_id)</h2>";
-  echo "<h1>Where the magic happens</h1>"
 ?>
