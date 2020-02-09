@@ -29,6 +29,6 @@
          // row, and we can access the different values based on their
          // name
          $workout_title2 = $row['workout_title'];
-         echo "<p><strong>$workout_title2<p>";
+         echo "<p>$workout_title2<p>";
       }
 ?>
