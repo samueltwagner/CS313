@@ -28,7 +28,7 @@ function get_db(){
   echo "<h1>Database is Connected!</h1>";
   echo "<h1>this php statement is working!</h1>";
   echo "<h1>Where the magic happens</h1>";
-  echo "this is the SQL Statment $workoutDetails";
+  echo "<h1>this is the SQL Statment $workoutDetails</h1>";
 
   $workoutDetails = $db->prepare("SELECT workout_title FROM p90x_workout_details");
   $workoutDetails->execute();
