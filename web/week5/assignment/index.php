@@ -15,8 +15,8 @@
    $wRow = $exercises->fetch(PDO::FETCH_ASSOC);
    $exercise_title = $wRow["exercise_title"];
 
-   echo "<h3>Your workout today is $workout_title.</h3>";
-   echo "<h3>Exercise is $exercise_title ($exercise_id)</h3>";
+   echo "<h3>Your workout today is" . $workout_title . "</h3>";
+   echo "<h3>Exercise is " . $exercise_title ($exercise_id) . "</h3>";
    echo "<h3>Inside the first php statement.</h3>";
 ?>
 <br>
@@ -30,7 +30,7 @@
       while ($row = $statement->fetch(PDO::FETCH_ASSOC))
       {
          $workout_title2 = $row['workout_title'];
-         echo "<h3>This is the workout title $workout_title2<h3>";
+         echo "<h3>This is the workout title" . $workout_title2 . "<h3>";
          echo "<h3>Inside the second php statement.</h3>";
       }
 ?>
