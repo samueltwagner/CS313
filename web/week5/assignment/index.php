@@ -19,3 +19,16 @@
    echo "<h1>Where the magic happens</h1>"
 ?>
 
+<?php
+      $statement = $db->prepare("SELECT * FROM p90x_workout_title");
+      $statement->execute();
+      // Go through each result
+      while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+      {
+         // The variable "row" now holds the complete record for that
+         // row, and we can access the different values based on their
+         // name
+         $workout_title2 = $row['workout_title'];
+         echo "<p><strong>$workout_title2<p>";
+      }
+?>
