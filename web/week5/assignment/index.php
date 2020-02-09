@@ -1,5 +1,5 @@
 <!-- Top of index.php-->
-<h1>Top of Index.php<h1>
+<h2>Top of Index.php<h2>
 <?php
    require "dbConnect.php";
    $db = get_db();
@@ -15,14 +15,14 @@
    $wRow = $exercises->fetch(PDO::FETCH_ASSOC);
    $exercise_title = $wRow["exercise_title"];
 
-   echo "<h1>Your workout today is $workout_title.</h1>";
+   echo "<h2>Your workout today is $workout_title.</h2>";
    echo "<h2>Exercise is $exercise_title ($exercise_id)</h2>";
-   echo "<h1>Inside the first php statement.</h1>";
+   echo "<h2>Inside the first php statement.</h2>";
 ?>
 <br>
-<h1>Below the first php statement</h1>
+<h2>Below the first php statement</h2>
 <br>
-<h1>Above the second php statment</h1>
+<h2>Above the second php statment</h2>
 <?php
       $statement = $db->prepare("SELECT * FROM p90x_workout_title");
       $statement->execute();
@@ -34,3 +34,4 @@
          echo "<h1>Inside the second php statement.</h1>";
       }
 ?>
+<h2>Below the second php statment</h2>

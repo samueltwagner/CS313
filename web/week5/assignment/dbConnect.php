@@ -26,7 +26,7 @@
       }
   }
   echo "<h1>dbConnect.php echo statement</h1>";
-  echo "<h1>Will this php variable show up: $dbPort </h1>";
+  echo "<h1>Will this php variable show up: $dbPort. </h1>";
 
   $workoutDetails = $db->prepare("SELECT workout_title FROM p90x_workout_details");
   $workoutDetails->execute();
@@ -45,5 +45,4 @@
      echo "<h2>Exercise is $exercise_title ($exercise_id)</h2>";
   }
 ?>
-
 <h1>Bottom of dbConnect.php<h1>
