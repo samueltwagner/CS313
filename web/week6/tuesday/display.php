@@ -17,10 +17,10 @@
             $last = $row['last'];
             $food_id = $row['food_type'];
 
-            $statement = $db->prepare('SELECT food FROM w6_food WHERE ID = $food_Id');
-            $statement->execute();
+            $foods = $db->prepare('SELECT food FROM w6_food WHERE ID = $food_Id');
+            $foods->execute();
 
-            while ($row = $statment->fetch(PDO::FETCH_ASSOC))
+            while ($row = $foods->fetch(PDO::FETCH_ASSOC))
             {
                $food = $fRow['food'];
             }
