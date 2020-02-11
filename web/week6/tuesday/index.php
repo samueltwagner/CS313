@@ -17,10 +17,10 @@
                   <select id="inputFood" class="form-control" name="food">
                      <?php
                         $statement = $db->prepare("SELECT * FROM w6_food");
-                        $statment->execute();
+                        $statement->execute();
                         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                         {
-                           $id = $row['id'];
+                           $id   = $row['id'];
                            $food = $row['food'];
                            echo "<option value='$id'>$food</option>";
                         }
