@@ -14,7 +14,7 @@
                <input type="text" class="form-control" placeholder="Last name" name="last">
             </div>
             <div class="col">
-                  <select id="inputFood" class="form-control" name="workout">
+                  <select id="inputWorkout" class="form-control" name="workout">
                      <?php
                         $statement = $db->prepare("SELECT * FROM workout");
                         $statement->execute();
