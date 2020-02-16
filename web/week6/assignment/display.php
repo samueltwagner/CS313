@@ -16,13 +16,13 @@
                $last    = $row['last_name'];
                $workout = $row['workout'];
 
-               $workouts = $db->prepare("SELECT workout FROM workout WHERE ID = $workout");
+               $workouts = $db->prepare("SELECT workout_name FROM workout WHERE ID = $workout");
                $workouts->execute();
                while ($fRow = $workouts->fetch(PDO::FETCH_ASSOC))
                {
                   $workout = $fRow['workout'];
                }
-               echo "<h1>$first $last's favorite food is $workout</h1>";
+               echo "<h1>$first $last's favorite workout is $workout</h1>";
             }
          ?>
 
