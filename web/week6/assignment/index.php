@@ -14,15 +14,15 @@
                <input type="text" class="form-control" placeholder="Last name" name="last">
             </div>
             <div class="col">
-                  <select id="inputFood" class="form-control" name="food">
+                  <select id="inputFood" class="form-control" name="workout">
                      <?php
-                        $statement = $db->prepare("SELECT * FROM w6_food");
+                        $statement = $db->prepare("SELECT * FROM workout");
                         $statement->execute();
                         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                         {
                            $id   = $row['id'];
-                           $food = $row['food'];
-                           echo "<option value='$id'>$food</option>";
+                           $workout = $row['workout'];
+                           echo "<option value='$id'>$workout</option>";
                         }
                      ?>
                   </select>
