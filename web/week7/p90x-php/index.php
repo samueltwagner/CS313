@@ -10,11 +10,11 @@ switch ($action) {
     break;
   //new-workout
   case 'new-workout':
-    include_once '/view/workout.new.php';
+    include_once 'view/workout.new.php';
     break;
   //update-workout
   case 'update-workout':
-    include_once '/view/workout.update.php';
+    include_once 'view/workout.update.php';
     break;
 
 
@@ -32,15 +32,15 @@ switch ($action) {
 
   //login register 
   case 'error':
-    include_once '/view/404.php';
+    include_once 'view/404.php';
     break;
   case 'login':
-    include_once '/view/login.php';
+    include_once 'view/login.php';
     break;
   case 'register':
-    include_once '/view/register.php';
+    include_once 'view/register.php';
     break;
   default;
-    include_once '/view/home.php';
+    include_once 'view/home.php';
     break;
 }
