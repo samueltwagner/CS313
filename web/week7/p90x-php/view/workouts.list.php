@@ -26,10 +26,10 @@
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Description</th>
-            <th scope="col">Category</th>
-            <th scope="col">Amount</th>
-            <th scope="col">Options</th>
+            <th scope="col">Workout</th>
+            <th scope="col">Reps</th>
+            <th scope="col">Weight</th>
+            <th scope="col">Side</th>
           </tr>
         </thead>
         <tbody>
