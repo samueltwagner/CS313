@@ -1,6 +1,6 @@
--- DROP TABLE IF EXISTS workouts CASCADE;
--- DROP TABLE IF EXISTS users CASCADE;
--- DROP TABLE IF EXISTS categories CASCADE;
+DROP TABLE IF EXISTS workouts CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+DROP TABLE IF EXISTS categories CASCADE;
 
 CREATE TABLE workouts (
   id SERIAL,
@@ -26,3 +26,6 @@ CREATE TABLE categories (
   name varchar(64) NOT NULL,
   description text DEFAULT NULL
 );
+
+-- export PATH="/Library/PostgreSQL/12/bin:$PATH"
+-- heroku pg:psql

@@ -1,6 +1,12 @@
 <!-- CONTROLLER -->
 
+
 <?php
+phpinfo();
+// ini_set('display_startup_errors', true);
+// error_reporting(E_ALL);
+// ini_set('display_errors', true);
+
 require_once(__DIR__ . '/library/main.php');
 
 $action = (String)@trim($_GET['page']);
