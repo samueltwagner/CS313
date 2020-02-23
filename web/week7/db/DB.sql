@@ -1,10 +1,11 @@
--- DROP TABLE IF EXISTS workouts CASCADE;
--- DROP TABLE IF EXISTS users CASCADE;
--- DROP TABLE IF EXISTS categories CASCADE;
+DROP TABLE IF EXISTS workouts CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+DROP TABLE IF EXISTS categories CASCADE;
 
 CREATE TABLE workouts (
   id SERIAL,
   user_id int NOT NULL,
+  workout_name text DEFAULT NULL,
   exercise_name text DEFAULT NULL,
   reps numeric(15,2) DEFAULT 0,
   pounds numeric(15,2) DEFAULT 0,

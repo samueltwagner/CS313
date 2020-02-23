@@ -25,8 +25,8 @@
       <table class="table table-striped table-hover">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">Workout</th>
+            <th scope="col">Day</th>
+            <th scope="col">Workout Name</th>
             <th scope="col">Reps</th>
             <th scope="col">Weight</th>
             <th scope="col">Side</th>
