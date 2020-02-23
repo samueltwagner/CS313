@@ -1,7 +1,7 @@
 <div id="nav" class="nav">
 	<div class="icon">
 		<ul>
-			<li><a title="Home" href="?page=home"><i class="fa fa-home "></i></a></li>
+			<li><a class="link" title="Home" href="?page=home"><i class="fa fa-home "></i></a></li>
         <?php
 
           if ($auth->isLogged()) {
@@ -17,13 +17,13 @@
     
 	<div class="text">
 		<ul>
-				<li><a title="Home" href="?page=home">Home</a></li>
+				<li><a class="link" title="Home" href="?page=home">Home</a></li>
         <?php 
           if ($auth->isLogged()) {
             ?>
-              <li><a href="?page=workouts" >My Workouts</a></li>
+              <li><a class="link" href="?page=workouts" >My Workouts</a></li>
               <!-- <li><a href="?page=categories" >Categories</a></li> -->
-              <li><a href="?logout" >Logout</a></li>
+              <li><a class="link" href="?logout" >Logout</a></li>
             <?php
           }
         ?>
