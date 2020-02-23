@@ -17,7 +17,7 @@
         <div class="form-group">
           <label for="email">Email address</label>
           <input type="email" class="form-control" aria-describedby="emailHelp" name="email" id="email" required>
-          <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
           <label for="password">Password</label>

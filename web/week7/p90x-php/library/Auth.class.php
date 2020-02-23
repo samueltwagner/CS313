@@ -6,13 +6,13 @@ class Auth {
   private $SESSION_NAME = 'cs313_user';
   private $USER;
 
-  // public function __construct($connection) {
-  //   if(!isset($_SESSION)) {
-  //     session_start();
-  //   }
-  //   $this->connection = $connection;
-  //   return $this;
-  // }
+  public function __construct($connection) {
+    if(!isset($_SESSION)) {
+      session_start();
+    }
+    $this->connection = $connection;
+    return $this;
+  }
 
   public function getUserId() {
     $user = $_SESSION[$this->SESSION_NAME];
