@@ -6,7 +6,7 @@ $action = (String)@trim($_GET['page']);
 switch ($action) {
   //workouts
   case 'workouts':
-    include_once '/view/workouts.list.php';
+    include_once 'view/workouts.list.php';
     break;
   //new-workout
   case 'new-workout':
