@@ -1,4 +1,3 @@
-<!-- Error Messages -->
 <?php
 if (isset($_SESSION['msg_info'])) {
   $message->setInfo((String)trim($_SESSION['msg_info']));
