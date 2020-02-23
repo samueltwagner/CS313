@@ -17,7 +17,7 @@
     <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/week7/p90x-php/modules/messages.php'; ?>
 
     <main>
-    <br><br><h1>Hi <?=$auth->getUser()->getFullName()?>, <br> Welcome to your P90X Tracker</h1> 
+    <br><br><h1>Hi <?=$auth->getUser()->getFullName()?>, <br> Welcome to your workout tracker.</h1> 
 
     </main>
 
