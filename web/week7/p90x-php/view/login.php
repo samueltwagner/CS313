@@ -9,8 +9,8 @@
 <html lang="en">
     <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/week7/p90x-php/modules/head.php';?>
 <body>
-    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/p90x-php/modules/header.php';?>
-    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/p90x-php/modules/messages.php'; ?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/week7/p90x-php/modules/header.php';?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/week7/p90x-php/modules/messages.php'; ?>
     <main>
       <br><br>
       <form method="POST" action="?login">
@@ -35,7 +35,7 @@
 
     </main>
 
-    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/p90x-php/modules/footer.php';?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/week7/p90x-php/modules/footer.php';?>
 
 </body>
 </html>

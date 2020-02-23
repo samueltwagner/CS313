@@ -13,10 +13,10 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/p90x-php/modules/head.php';?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/week7/p90x-php/modules/head.php';?>
 <body>
-    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/p90x-php/modules/nav.php';?>
-    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/p90x-php/modules/messages.php'; ?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/week7/p90x-php/modules/nav.php';?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/week7/p90x-php/modules/messages.php'; ?>
     <main>
       <div class="row">
         <div class="col-sm-12">
@@ -70,7 +70,7 @@
       </div>
     </main>
 
-    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/p90x-php/modules/footer.php';?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/week7/p90x-php/modules/footer.php';?>
 
 </body>
 </html>
