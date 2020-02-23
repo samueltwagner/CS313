@@ -38,13 +38,13 @@
               ?>
               <tr>
                 <th scope="row">1</th>
-                <td><?=$workout['description']?></td>
+                <td><?=$workout['workout_name']?></td>
                 <td><?php
                   $workoutCategory = $categories->find($workout['id_category']);
                   if ($workoutCategory != false) {
                     echo $workoutCategory['name'];
                   } else {
-                    echo "Unknow";
+                    echo "Unknown";
                   }
                 ?></td>
                 <td><?=$workout['amount']?></td>
