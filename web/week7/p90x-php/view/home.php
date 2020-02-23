@@ -9,7 +9,7 @@
 
     <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/week7/p90x-php/modules/head.php';?>
     
-<body>
+<body id="body-container">
     
     <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/week7/p90x-php/modules/nav.php';?>
 
