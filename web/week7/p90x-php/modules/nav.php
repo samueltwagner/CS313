@@ -5,9 +5,9 @@
         <?php 
           if ($auth->isLogged()) {
             ?>
-              <li><a href="?page=workouts"><i class="fa fa-edit "></i></a><a class="link" href="?page=workouts" >Workouts</a></li>
+              <li><a class="link" href="?page=workouts"><i class="fa fa-edit "></i></a><a class="link" href="?page=workouts" >Workouts</a></li>
               <!-- <li><a href="?page=categories" >Categories</a></li> -->
-              <li><a href="?logout"><i class="fa fa-sign-out"></i></a><a class="link" href="?logout">Logout</a></li>
+              <li><a class="link" href="?logout"><i class="fa fa-sign-out"></i></a><a class="link" href="?logout">Logout</a></li>
             <?php
           }
         ?>
