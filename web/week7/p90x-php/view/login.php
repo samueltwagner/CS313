@@ -7,7 +7,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/p90x-php/modules/head.php';?>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'] . '../p90x-php/modules/head.php';?>
 <body>
     <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/p90x-php/modules/header.php';?>
     <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/p90x-php/modules/messages.php'; ?>
