@@ -31,7 +31,8 @@ body {
 }
 
 .logo img {
-  border-radius: 10px;
+  border-radius: 20%;
+  box-shadow: 1px gray;
   padding-bottom: 15px;
 }
 
