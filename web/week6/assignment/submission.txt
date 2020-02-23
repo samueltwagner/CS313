@@ -1,0 +1,30 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application:
+https://peaceful-chamber-08126.herokuapp.com/week6/assignment/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/samueltwagner/CS313/tree/master/web/week6/assignment
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+The database is working and the athlete is displaying.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+I'm working on displaying the workout and exercise together.
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+I really enjoyed learning about about tables and their relationships.
+
+6. What is a benefit of having a foreign key constraint?
+Foreign Key constraints allow us to reference primary keys in other tables. It creates a relationship.
+
+7. Please select the category you feel best describes your assignment:
+1 - Some attempt was made
+2 - Developing, but significantly deficient
+3 - Slightly deficient, but still mostly adequate
+4 - Meets requirements
+5 - Shows creativity and excels above and beyond requirements
+4
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+The database is working and the data is displaying as needed.

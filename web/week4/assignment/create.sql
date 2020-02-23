@@ -8,6 +8,7 @@ CREATE TABLE p90x_user
 );
 
 CREATE TABLE p90x_workout_title
+-- workout id
 ( workout_title VARCHAR(100) NOT NULL PRIMARY KEY
 );
 

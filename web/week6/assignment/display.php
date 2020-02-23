@@ -5,18 +5,18 @@
 	<body>
 		<div class="container">
          <?php
-            $personId = $_GET['personId'];
-            $statement = $db->prepare('SELECT * FROM w6_user WHERE Id = :personId');
-            $statement->bindValue(':personId', $personId);
+            $personId = $_GET['id'];
+            $statement = $db->prepare('SELECT * FROM athlete WHERE Id = :id');
+            $statement->bindValue(':id', $personId);
             $statement->execute();
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             {
                $id      = $row['id'];
                $first   = $row['first_name'];
                $last    = $row['last_name'];
-               $workout = $row['workout'];
+               $workout_id = $row['workout_favorite'];
 
-               $workouts = $db->prepare("SELECT workout_name FROM workout WHERE ID = $workout");
+               $workouts = $db->prepare("SELECT workout_name FROM workout WHERE ID = $workout_id");
                $workouts->execute();
                while ($fRow = $workouts->fetch(PDO::FETCH_ASSOC))
                {
