@@ -1,9 +1,4 @@
-<!-- CONTROLLER -->
-
-
 <?php
-// phpinfo();
-
 require_once(__DIR__ . '/library/main.php');
 
 $action = (String)@trim($_GET['page']);
