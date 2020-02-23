@@ -27,9 +27,6 @@
           <tr>
             <th scope="col">Day</th>
             <th scope="col">Workout Name</th>
-            <th scope="col">Reps</th>
-            <th scope="col">Weight</th>
-            <th scope="col">Side</th>
           </tr>
         </thead>
         <tbody>
