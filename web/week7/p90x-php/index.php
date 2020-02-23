@@ -6,15 +6,15 @@ $action = (String)@trim($_GET['page']);
 switch ($action) {
   //workouts
   case 'workouts':
-    include_once '/week7/p90x-php/view/workout.list.php';
+    include_once '/p90x-php/view/workout.list.php';
     break;
   //new-workout
   case 'new-workout':
-    include_once '/week7/p90x-php/view/workout.new.php';
+    include_once '/p90x-php/view/workout.new.php';
     break;
   //update-workout
   case 'update-workout':
-    include_once '/week7/p90x-php/view/workout.update.php';
+    include_once '/p90x-php/view/workout.update.php';
     break;
 
 
@@ -32,15 +32,15 @@ switch ($action) {
 
   //login register 
   case 'error':
-    include_once '/week7/p90x-php/view/404.php';
+    include_once '/p90x-php/view/404.php';
     break;
   case 'login':
-    include_once '/week7/p90x-php/view/login.php';
+    include_once '/p90x-php/view/login.php';
     break;
   case 'register':
-    include_once '/week7/p90x-php/view/register.php';
+    include_once '/p90x-php/view/register.php';
     break;
   default;
-    include_once '/week7/p90x-php/view/home.php';
+    include_once '/p90x-php/view/home.php';
     break;
 }
