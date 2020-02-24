@@ -40,6 +40,7 @@
                       <label for="workout_name">Workout Name:</label>
                       <input type="text" class="form-control" id="desc" name="workout_name" required>
                   </div>
+                  <br>
                 <div class="row">
                     <div class="col">
                       <label for="exercise_name">Exercise: </label>

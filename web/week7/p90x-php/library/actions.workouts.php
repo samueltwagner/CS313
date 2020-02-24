@@ -25,7 +25,7 @@ if (isset($_GET['type'])) {
           $reps = (String)trim($_POST['reps']);
           $pounds = (String)trim($_POST['pounds']);
           if (isValid($workout_name) && isValid($exercise_name) && isValid($reps) && isValid($pounds)) {
-            $workouts->create($amount, $description, $categoryId);
+            $workouts->create($workout_name, $exercise_name, $reps, $pounds);
             $_SESSION['msg_info'] = 'Workout added with success';
             header('Location: ?page=workouts');
           } else {
