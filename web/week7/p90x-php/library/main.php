@@ -9,7 +9,6 @@ require_once(__DIR__ . '/Message.php');
 $message = new Message;
 $database = new Database($DATABASE['hostname'], $DATABASE['port'], $DATABASE['dbname'], $DATABASE['username'], $DATABASE['password'], $message);
 $auth = new Auth($database->getConnection());
-// $categories = new Categories($database->getConnection(), $auth);
 $workouts = new Workout($database->getConnection(), $auth);
 
 $auth->checkout();

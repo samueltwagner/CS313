@@ -20,10 +20,11 @@ if (isset($_GET['type'])) {
           exit;
           break;
         case "create":
-          $categoryId = (String)trim($_POST['category']);
-          $amount = (String)trim($_POST['amount']);
-          $description = (String)trim($_POST['description']);
-          if (isValid($categoryId) && isValid($amount) && isValid($description)) {
+          $workout_name = (String)trim($_POST['workout_name']);
+          $exercise_name = (String)trim($_POST['exercise_name']);
+          $reps = (String)trim($_POST['reps']);
+          $pounds = (String)trim($_POST['pounds']);
+          if (isValid($workout_name) && isValid($exercise_name) && isValid($reps) && isValid($pounds)) {
             $workouts->create($amount, $description, $categoryId);
             $_SESSION['msg_info'] = 'Workout added with success';
             header('Location: ?page=workouts');

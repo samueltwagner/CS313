@@ -17,7 +17,6 @@ switch ($action) {
     include_once 'view/workout.update.php';
     break;
 
-
 //unsure
 //   case 'categories':
 //     include_once 'view/categories.list.php';
@@ -28,7 +27,6 @@ switch ($action) {
 //   case 'update-category':
 //     include_once 'view/categories.update.php';
 //     break;
-
 
   //login register 
   case 'error':

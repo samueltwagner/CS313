@@ -36,8 +36,14 @@
           <form method="post" action="?type=workout&action=create">
           <div class="col-sm-12">
               <div class="form-group" style="text-align: left">
-                <label for="desc">Description</label>
-                <input type="text" class="form-control" id="desc" name="description" required>
+                <label for="desc">Workout Name:</label>
+                <input type="text" class="form-control" id="desc" name="workout_name" required>
+                <label for="desc">1)Exercise: </label>
+                <input type="text" class="form-control" id="desc" name="exercise_name" required>
+                <label for="desc">Reps: </label>
+                <input type="text" class="form-control" id="desc" name="reps" required>
+                <label for="desc">Pounds: </label>
+                <input type="text" class="form-control" id="desc" name="pounds" required>
               </div>
             </div>
             <div class="col-sm-12">
