@@ -36,46 +36,28 @@
           <form method="post" action="?type=workout&action=create">
           <div class="col-sm-12">
               <div class="form-group" style="text-align: left">
+                  <div>
+                      <label for="workout_name">Workout Name:</label>
+                      <input type="text" class="form-control" id="desc" name="workout_name" required>
+                  </div>
                 <div class="row">
-                  <div class="col">
-                    <label for="workout_name">Workout Name:</label>
-                    <input type="text" class="form-control" id="desc" name="workout_name" required>
-                  </div>
-                  <div class="col">
-                    <label for="exercise_name">1)Exercise: </label>
-                    <input type="text" class="form-control" id="desc" name="exercise_name" required>  
-                  </div>
-                  <div class="col">
-                    <label for="reps">Reps: </label>
-                    <input type="text" class="form-control" id="desc" name="reps" required> 
-                  </div>
-                  <div class="col">
-                    <label for="pounds">Pounds: </label>
-                    <input type="text" class="form-control" id="desc" name="pounds" required> 
-                  </div>
+                    <div class="col">
+                      <label for="exercise_name">Exercise: </label>
+                      <input type="text" class="form-control" id="desc" name="exercise_name" required>  
+                    </div>
+                    <div class="col">
+                      <label for="reps">Reps: </label>
+                      <input type="text" class="form-control" id="desc" name="reps" required> 
+                    </div>
+                    <div class="col">
+                      <label for="pounds">Pounds: </label>
+                      <input type="text" class="form-control" id="desc" name="pounds" required> 
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-12">
-              <div class="form-group" style="text-align: left">
-                <label for="categories">Category</label>
-                <select class="form-control" id="categories" name="category">
-                  <?php 
-                    foreach($categories->getCategories() as $category) {
-                      ?>
-                        <option value="<?=$category['id']?>"><?=$category['name']?></option>
-                      <?php
-                    }
-                  ?>
-                </select>
+                 </div>
+               <button type="submit" class="btn btn-primary">Create</button>
               </div>
             </div>
-            <div class="col-sm-12">
-              <div class="form-group" style="text-align: left">
-                <label for="amount">Amount</label>
-                <input type="number" min="0" class="form-control" id="amount" name="amount" required>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Create</button>
           </form>
         </div>
       </div>
