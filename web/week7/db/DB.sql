@@ -7,7 +7,13 @@ CREATE TABLE workouts (
   id SERIAL,
   user_id int NOT NULL,
   workout_name text DEFAULT NULL,
-  workout_day int NOT NULL
+  workout_day int NOT NULL,
+  exercise_name text DEFAULT NULL,
+  reps numeric(15,2) DEFAULT 0,
+  pounds numeric(15,2) DEFAULT 0,
+  side text DEFAULT NULL,
+  name varchar(64) NOT NULL,
+  description text DEFAULT NULL
 );
 
 CREATE TABLE exercises (
@@ -31,6 +37,20 @@ CREATE TABLE users (
 
 -- export PATH="/Library/PostgreSQL/12/bin:$PATH"
 -- heroku pg:psql
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 -- REFERENCES
 

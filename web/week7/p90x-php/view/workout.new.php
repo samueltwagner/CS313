@@ -36,11 +36,17 @@
           <form method="post" action="?type=workout&action=create">
           <div class="col-sm-12">
               <div class="form-group" style="text-align: left">
-                  <div>
-                      <label for="workout_name">Workout Name:</label>
-                      <input type="text" class="form-control" id="desc" name="workout_name" required>
-                  </div>
-                  <br>
+                <div class="row">
+                    <div class="col">
+                       <label for="workout_name">Workout Name:</label>
+                       <input type="text" class="form-control" id="desc" name="workout_name" required>
+                    </div>
+                    <div class="col">
+                      <label for="workout_day">Day:</label>
+                      <input type="text" class="form-control" id="desc" name="workout_day" required> 
+                    </div>
+                </div>
+                <br>
                 <div class="row">
                     <div class="col">
                       <label for="exercise_name">Exercise: </label>
