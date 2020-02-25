@@ -40,7 +40,7 @@ if (isset($_GET['type'])) {
           $exercise_name = (String)trim($_POST['exercise_name']);
           $reps = (String)trim($_POST['reps']);
           $pounds = (String)trim($_POST['pounds']);
-          if (isValid($id) && isValid($categoryId) && isValid($amount) && isValid($description)) {
+          if (isValid($workout_name) && isValid($exercise_name) && isValid($reps) && isValid($pounds)) {
             $workouts->update($workout_name, $exercise_name, $reps, $pounds);
             $_SESSION['msg_info'] = 'Workout updated with success';
             header('Location: ?page=workouts');
