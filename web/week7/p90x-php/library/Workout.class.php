@@ -20,7 +20,7 @@ class Workout {
   }
 
   //???
-  public function find($categoryId) {
+  public function find() {
     $userId = $this->auth->getUser()->getId();
     $preparedStatment = $this->connection->prepare('SELECt * FROM workouts WHERE id = :id AND user_id = :userId LIMIT 1;');
     $preparedStatment->bindParam(":id", $categoryId, PDO::PARAM_INT);

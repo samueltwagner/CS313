@@ -37,9 +37,9 @@
                 <th scope="row">1</th>
                 <td><?=$workout['workout_name']?></td>
                 <td><?php
-                  $workoutCategory = $categories->find($workout['id_category']);
-                  if ($workoutCategory != false) {
-                    echo $workoutCategory['name'];
+                  $workoutName = $workouts->find($workout['id']);
+                  if ($workoutName != false) {
+                    echo $workoutName['name'];
                   } else {
                     echo "Unknown";
                   }
@@ -57,7 +57,7 @@
                     </button>
                   </a>
                 </td>
-              </tr>
+              </tr> 
               <?php
             }
           ?>
