@@ -25,8 +25,8 @@ if (isset($_GET['type'])) {
           $exercise_name = (String)trim($_POST['exercise_name']);
           $reps = (String)trim($_POST['reps']);
           $pounds = (String)trim($_POST['pounds']);
-          if (isValid($workout_name) && isValid($exercise_name) && isValid($reps) && isValid($pounds) && isValid($workout_day)) {
-            $workouts->create($workout_name, $exercise_name, $reps, $pounds, $workout_day);
+          if (isValid($workout_name) && isValid($workout_day) && isValid($exercise_name) && isValid($reps) && isValid($pounds)) {
+            $workouts->create($workout_name, $workout_day, $exercise_name, $reps, $pounds);
             $_SESSION['msg_info'] = 'Workout added with success';
             header('Location: ?page=workouts');
           } else {
