@@ -44,7 +44,7 @@
                     echo "Unknown";
                   }
                 ?></td>
-                <td><?=$workout['name']?></td>
+                <td><?=$workout['id']?></td>
                 <td>
                   <a href="?page=update-workout&id=<?=$workout['id']?>">
                     <button class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="left" title="Update workout">
