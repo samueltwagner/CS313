@@ -30,7 +30,7 @@ class Workout {
     return $result ? $result : false;
   }
 
-  public function create($amount, $description, $categoryId) {
+  public function create($workout_name, $exercise_name, $reps, $pounds) {
     $userId = $this->auth->getUser()->getId();
 
     //CHANGE
@@ -39,6 +39,7 @@ class Workout {
     $preparedStatment->bindParam(":amount", $amount, PDO::PARAM_INT);
     $preparedStatment->bindParam(":description", $description, PDO::PARAM_STR);
     $preparedStatment->bindParam(":category", $categoryId, PDO::PARAM_INT);
+    
     try{
       $this->connection->beginTransaction();
       $preparedStatment->execute();

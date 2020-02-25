@@ -36,12 +36,12 @@ if (isset($_GET['type'])) {
 
           break;
         case "update":
-          $id = (String)trim($_POST['id']);
-          $categoryId = (String)trim($_POST['category']);
-          $amount = (String)trim($_POST['amount']);
-          $description = (String)trim($_POST['description']);
+          $workout_name = (String)trim($_POST['workout_name']);
+          $exercise_name = (String)trim($_POST['exercise_name']);
+          $reps = (String)trim($_POST['reps']);
+          $pounds = (String)trim($_POST['pounds']);
           if (isValid($id) && isValid($categoryId) && isValid($amount) && isValid($description)) {
-            $workouts->update($id, $amount, $description, $categoryId);
+            $workouts->update($workout_name, $exercise_name, $reps, $pounds);
             $_SESSION['msg_info'] = 'Workout updated with success';
             header('Location: ?page=workouts');
           } else {
