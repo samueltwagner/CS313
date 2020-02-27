@@ -59,10 +59,10 @@
             }
           ?>
         </tbody>
-        <a href="?page=new-workout" class="btn btn-primary" style="float: right; color: white;">
-            New Workout
-        </a>
       </table>
+      <a href="?page=new-workout" class="btn btn-primary" style="float: right; color: white;">
+            New Workout
+      </a>
     </main>
 
     <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/week7/p90x-php/modules/footer.php';?>
