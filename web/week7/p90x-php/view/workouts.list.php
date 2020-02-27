@@ -60,7 +60,7 @@
           ?>
         </tbody>
       </table>
-      <a href="?page=new-workout" class="btn btn-primary" style="float: right; color: white;">
+      <a href="?page=new-workout" class="btn btn-primary" style="float: left; color: white;">
             New Workout
       </a>
     </main>
