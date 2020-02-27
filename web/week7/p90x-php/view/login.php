@@ -27,7 +27,7 @@
 
       </br><span class="or">Or</span> </br></br>
       <a href="?page=register">
-        <button class="btn btn-secondary">
+        <button class="btn btn-success">
           Register New User
         </button>
       </a>

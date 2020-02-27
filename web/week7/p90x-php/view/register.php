@@ -34,7 +34,6 @@
               <div class="col-sm-12 mb-3">
                 <label for="email">Email address</label>
                 <input type="email" class="form-control" aria-describedby="emailHelp" name="email" id="email" required>
-                <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
               </div>
               <div class="col-sm-12 mb-2">
                 <label for="password">Password</label>
@@ -45,7 +44,7 @@
                 <input type="password" class="form-control" id="cpassword" name="password_confirmation" required>
               </div>
               <div class="col-sm-12">
-                <a href="?page=login" style="float: left;" class="btn btn-secondary">
+                <a href="?page=login" style="float: left;" class="btn btn-success">
                   Login
                 </a>
                 <button type="submit" class="btn btn-primary" style="float: right">Register</button>
