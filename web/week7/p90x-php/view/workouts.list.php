@@ -16,12 +16,9 @@
           <h3 style="float: left;">
             Workouts
           </h3>
-          <a href="?page=new-workout" class="btn btn-primary" style="float: right; color: white;">
-            New Workout
-          </a>
         </div>
       </header>
-      
+      <br>
       <table class="table table-striped table-hover">
         <thead>
           <tr>
@@ -62,6 +59,9 @@
             }
           ?>
         </tbody>
+        <a href="?page=new-workout" class="btn btn-primary" style="float: right; color: white;">
+            New Workout
+        </a>
       </table>
     </main>
 

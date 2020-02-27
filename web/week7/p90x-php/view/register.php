@@ -44,10 +44,10 @@
                 <input type="password" class="form-control" id="cpassword" name="password_confirmation" required>
               </div>
               <div class="col-sm-12">
-                <a href="?page=login" style="float: left;" class="btn btn-success">
+                <a href="?page=login" style="float: left;" class="btn btn-primary">
                   Login
                 </a>
-                <button type="submit" class="btn btn-primary" style="float: right">Register</button>
+                <button type="submit" class="btn btn-success" style="float: right">Register</button>
               </div>
             </div>
           </div>
