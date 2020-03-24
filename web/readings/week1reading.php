@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US"> 
-<link rel="stylesheet" type="text/css" href="styles.css">
     <?php include '../shared/header.php';?>
-    <h1>The sitepoint videos were amazing. 
+    <h3>The sitepoint videos were amazing. 
 
 Here are my notes below.
 
@@ -42,6 +41,6 @@ masking doesn’t help for passwords
 
 auto advance for credit cards
 
-anchor tags on phone number</h1>
+anchor tags on phone number</h3>
     <?php include '../shared/footer.php';?>
 </html>

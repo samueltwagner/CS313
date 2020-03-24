@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US"> 
     <?php include '../shared/header.php';?>
-    <h1>Week 8 Reading
+    <h3>Week 8 Reading
 
 The scale(x,y) function scales an element by the defined factors horizontally then vertically. If only one value is provided, it will be used for both the x and y values, growing or shrinking your element or pseudo-element while maintaining the original aspect ratio. For example, scale(1) would leave the element the same size, scale(2) would double its proportions, scale(0.5) would halve them, and so on. Providing different values will distort the element, as you’d expect:
 
@@ -70,6 +70,6 @@ We’ve spent quite a bit of time this chapter focusing on drawing with code. Le
 Set the draggable attribute on any HTML elements you’d like to be draggable.
 Add an event listener for the dragstart event on any draggable HTML elements.
 Add an event listener for the dragover and drop events on any elements that you want to have accept dropped items.
-Note that draggable isnota Boolean attribute, so you have to explicitly set it to true .</h1>
+Note that draggable isnota Boolean attribute, so you have to explicitly set it to true .</h3>
     <?php include '../shared/footer.php';?>
 </html>

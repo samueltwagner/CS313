@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US"> 
     <?php include '../shared/header.php';?>
-    <h1>Before submitting data to the server, it is important to ensure all required form controls are filled out, in the correct format. This is called client-side form validation, and helps ensure data submitted matches the requirements set forth in the various form controls. This article leads you through basic concepts and examples of client-side form validation.
+    <h3>Before submitting data to the server, it is important to ensure all required form controls are filled out, in the correct format. This is called client-side form validation, and helps ensure data submitted matches the requirements set forth in the various form controls. This article leads you through basic concepts and examples of client-side form validation.
 
  
 
@@ -45,6 +45,6 @@ Here we are fetching a JSON file across the network and printing it to the conso
 
  
 
-This is just an HTTP response, not the actual JSON. To extract the JSON body content from the response, we use the json() (Links to an external site.) method (defined on the Body (Links to an external site.) mixin, which is implemented by both the Request (Links to an external site.) and Response (Links to an external site.) objects.)</h1>
+This is just an HTTP response, not the actual JSON. To extract the JSON body content from the response, we use the json() (Links to an external site.) method (defined on the Body (Links to an external site.) mixin, which is implemented by both the Request (Links to an external site.) and Response (Links to an external site.) objects.)</h3>
     <?php include '../shared/footer.php';?>
 </html>

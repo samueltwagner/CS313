@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US"> 
     <?php include '../shared/header.php';?>
-    <h1>Week 7 Readings
+    <h3>Week 7 Readings
 
  
 
@@ -180,6 +180,6 @@ To demonstrate how to update a web page using Ajax, we’ll need to set up a dem
     Ajax response will appear here
 
 </div>
-</h1>
+</h3>
     <?php include '../shared/footer.php';?>
 </html>

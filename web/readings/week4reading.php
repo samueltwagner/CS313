@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US"> 
     <?php include '../shared/header.php';?>
-    <h1>
+    <h3>
 
 Even though there is only one form in our example, a collection will still be returned, so we have to use index notation to return the first (and only) form object, like so:
 
@@ -99,6 +99,6 @@ Yarn  (Links to an external site.)has emerged recently as a popular alternative 
 
  
 
-</h1>
+</h3>
     <?php include '../shared/footer.php';?>
 </html>

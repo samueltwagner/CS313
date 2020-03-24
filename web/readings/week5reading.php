@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US"> 
     <?php include '../shared/header.php';?>
-    <h1>Week 5 Readings
+    <h3>Week 5 Readings
 
  
 
@@ -79,6 +79,6 @@ Remember to remove any references to the debugger command before shipping any co
 
 Jest (Links to an external site.)is a TDD framework, created by Facebook, that has gained a lot of popularity recently. It makes it easy to create and run tests by providing helper methods for common test assertions.
 
-</h1>
+</h3>
     <?php include '../shared/footer.php';?>
 </html>
