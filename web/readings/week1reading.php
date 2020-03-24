@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US"> 
+<link rel="stylesheet" type="text/css" href="styles.css">
     <?php include '../shared/header.php';?>
     <h1>The sitepoint videos were amazing. 
 
