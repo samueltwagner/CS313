@@ -6,7 +6,7 @@
 </head>
 <body>
 <header>
-<h1>CS313 | Sam Wagner</h1>
+<h1>Portfolio | Sam Wagner</h1>
     <nav>
         <label for="toggle">Show Menu</label>
         <input id="toggle" type="checkbox">
