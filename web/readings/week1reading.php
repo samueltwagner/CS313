@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US"> 
-    <?php include 'shared/header.php';?>
+    <?php include '../shared/header.php';?>
     <h1>The sitepoint videos were amazing. 
 
 Here are my notes below.
