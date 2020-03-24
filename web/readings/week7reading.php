@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US"> 
-    <?php include 'shared/header.php';?>
+    <?php include '../shared/header.php';?>
     <h1>Week 7 Readings
 
  
@@ -181,5 +181,5 @@ To demonstrate how to update a web page using Ajax, we’ll need to set up a dem
 
 </div>
 </h1>
-    <?php include 'shared/footer.php';?>
+    <?php include '../shared/footer.php';?>
 </html>

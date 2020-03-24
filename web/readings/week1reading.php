@@ -42,5 +42,5 @@ masking doesn’t help for passwords
 auto advance for credit cards
 
 anchor tags on phone number</h1>
-    <?php include 'shared/footer.php';?>
+    <?php include '../shared/footer.php';?>
 </html>

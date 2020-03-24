@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US"> 
-    <?php include 'shared/header.php';?>
+    <?php include '../shared/header.php';?>
     <h1>So, here we’ve got a method sayHi of the object user.
 
  
@@ -58,5 +58,5 @@ The document.querySelector() method allows you to use CSS notation to find thefi
  
 
 wonderWoman.classList.add('warrior');</h1>
-    <?php include 'shared/footer.php';?>
+    <?php include '../shared/footer.php';?>
 </html>

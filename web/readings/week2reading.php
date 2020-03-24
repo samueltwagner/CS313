@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US"> 
-    <?php include 'shared/header.php';?>
+    <?php include '../shared/header.php';?>
     <h1>RESERVED WORDS - 61 Words
 
  
@@ -120,5 +120,5 @@ const square = x => x*x;
  
 
 never new about hoisting</h1>
-    <?php include 'shared/footer.php';?>
+    <?php include '../shared/footer.php';?>
 </html>

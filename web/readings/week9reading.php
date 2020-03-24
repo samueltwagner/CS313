@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US"> 
-    <?php include 'shared/header.php';?>
+    <?php include '../shared/header.php';?>
     <h1>The Browser Object Model (or BOM for short) is a collection of properties and methods that contain information about the browser and computer screen. 
 
  
@@ -57,5 +57,5 @@ We saw in earlier chapters that JavaScript is a single-threaded language, meanin
  
 
 Websocket is a new protocol that allows two-way communication with a server – also known as push messaging. This means that a connection is kept open and responses are ‘pushed’ to the client as soon as they are received.</h1>
-    <?php include 'shared/footer.php';?>
+    <?php include '../shared/footer.php';?>
 </html>
