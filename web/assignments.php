@@ -11,6 +11,6 @@
     <h1><a href="/readings/week8reading.php">Week 8: Reading Notes</a></h1>
     <h1><a href="/readings/week9reading.php">Week 9: Reading Notes</a></h1>
     <h1><a href="/readings/week10reading.php">Week 10: Reading Notes</a></h1>
-    <h1><a href="/Ron-Swanson-Quote-Calendar/index.html">Final Project</a><h1>
+    <h1><a href="/Ron-Swanson-Quote-Calendar/home.html">Final Project</a><h1>
     <?php include 'shared/footer.php';?>
 </html>
