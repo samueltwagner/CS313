@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+}
+main {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#header h1 {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+}
+
+#header h2 {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
+
+#quotelist td {
+  cursor: pointer;
+}
+
+#quotelist {
+  flex-flow: row wrap;
+  list-style-type: none;
+}
+
+#quotelist thead {
+  background-color: lightgray;
+}
+
+#quotelist tr {
+  border: 1px solid;
+  padding: 5px;
+  height: 60px;
+}
+#quotelist tr:nth-child(even) {
+  background-color: rgb(255, 247, 240);
+}
+#quotelist td:hover {
+  background-color: bisque;
+  text-decoration: none;
+}
