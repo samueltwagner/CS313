@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>Ron Swanson Quotes Calendar</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="/Ron-Swanson-Quote-Calendar/css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     </head>
     <body>
         <div id="header">
@@ -32,6 +32,6 @@
         </div>
         </main>
         <p><a href="https://github.com/jamesseanwright/ron-swanson-quotes#ron-swanson-quotes-api">The Ron Swanson quotes API can be found here.</a></p>
-        <script src="quotes-promises.js"></script>
+        <script src="./quotes-promises.js"></script>
     </body>
     </html>
